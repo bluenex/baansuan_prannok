@@ -4,6 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+	font-family: 'Sukhumvit';
+	/*src: url('fonts/sukhumvit-set/SukhumvitSet-Bold.ttf');
+  src: url('fonts/sukhumvit-set/SukhumvitSet-Light.ttf');*/
+  src: url('/fonts/sukhumvit-set/SukhumvitSet-Medium.ttf') format('truetype');
+  /*src: url('fonts/sukhumvit-set/SukhumvitSet-SemiBold.ttf');
+  src: url('fonts/sukhumvit-set/SukhumvitSet-Text.ttf');
+  src: url('fonts/sukhumvit-set/SukhumvitSet-Thin.ttf');*/
+}
+
 html,
 body {
     width: 100%;
@@ -11,7 +21,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Sukhumvit', Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -42,7 +52,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Sukhumvit', 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -58,6 +68,17 @@ p {
 .bg-dark {
     color: #fff;
     background-color: #222;
+}
+
+.bg-blue {
+    color: #2D3538;
+    background-color: #F4FBFD;
+}
+
+.bg-orange {
+    color: #2D3538;
+    background-color: #ffe1e6;
+    background-color: rgba(240,95,64,.6)
 }
 
 .text-faded {
@@ -78,7 +99,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Sukhumvit', 'Open Sans','Helvetica Neue',Arial,sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -87,7 +108,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Sukhumvit', 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
 }
@@ -129,21 +150,25 @@ aside {
 
     .navbar-default .navbar-header .navbar-brand {
         color: rgba(255,255,255,.7);
+        color: #222;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
         color: #fff;
+        color: #f05f40;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
         color: rgba(255,255,255,.7);
+        color: #222;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
         color: #fff;
+        color: #f05f40;
     }
 
     .navbar-default.affix {
@@ -178,7 +203,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    color: #222;
+    /*background-image: url(../img/header.jpg);*/
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -209,6 +235,7 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255,255,255,.7);
+    color: #222;
 }
 
 @media(min-width:768px) {
